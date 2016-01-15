@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<div class="col-md-10 col-sm-12 col-xs-12 ">
+	
+	<div ng-controller="ContactsCtrl" class="col-md-10 col-sm-12 col-xs-12">
+		<div class="panel panel-info spacer">
+			<div class="panel-heading">Filtre</div>
+			<div class="panel-body">
+				<input ng-click="rechere()" placeholder="Tapez un mot clé">
+			</div>
+		</div>
+		<div class="panel panel-info spacer">
+			<div class="panel-heading">Liste des contacts</div>
+			<div class="panel-body">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Nom	</th>
+							<th>Prenom</th>
+							<th>Adresse</th>
+							<th>TEL</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="c in contacts">
+							<td>{{ c.firstname }}</td>
+							<td>{{ c.lastname }}</td>
+							<td>{{ c.phone }}</td>
+							<td>{{ c.address }}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		
+	</div>
+	
+</div>

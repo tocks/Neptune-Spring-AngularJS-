@@ -1,0 +1,10 @@
+.spacer{
+	margin-top: 30px;
+}
+
+.cliquable{
+	cursor: pointer;
+}
+#loginCss{
+	background-color: #4d004c;
+}

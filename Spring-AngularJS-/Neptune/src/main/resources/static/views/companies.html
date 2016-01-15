@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<div class="col-md-12 col-sm-12 col-xs-12 ">
+	
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-info spacer">
+			<div class="panel-heading">Liste des entreprises</div>
+			<div class="panel-body">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>NOM</th>
+							<th>DES</th>
+							<th>SECTOR</th>
+							<th>TEL</th>
+							<th>WEB</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="c in companies">
+							<td>{{ c.companyName }}</td>
+							<td>{{ c.description }}</td>
+							<td>{{ c.Sector }}</td>
+							<td>{{ c.phone }}</td>
+							<td>{{ c.website }}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
